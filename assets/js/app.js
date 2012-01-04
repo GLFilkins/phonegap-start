@@ -27,7 +27,6 @@ run(function () {
 		});
 	});
     when('#map', function () {
-    	alert("If you see this, some shit is working ...");
         store.get('config', function (saved) {
             // construct a gmap str
             var map  = saved ? saved.map || ui('map') : ui('map')
@@ -45,6 +44,7 @@ run(function () {
                 x$('img#static_map').attr('src', "assets/img/gpsfailed.png");
             });
         });
+    	alert("If you see this,\nshit be hap'nin!");
     });
     when('#save', function () {
         store.save({
